@@ -26,15 +26,17 @@
    cd your-repo
 Установите зависимости:
 
-
+```bash
 npm install
 # или
 yarn install
 # или
 pnpm install
+```
+
 Запуск в режиме разработки:
 Для запуска локального сервера в режиме разработки используйте одну из команд:
-
+```bash
 # npm
 npm run dev
 
@@ -44,10 +46,11 @@ yarn dev
 # pnpm
 pnpm dev
 После этого приложение будет доступно на http://localhost:3000.
+```
 
 Сборка для продакшн:
 Для сборки приложения для продакшн выполните команду:
-
+```bash
 # npm
 npm run build
 
@@ -56,14 +59,17 @@ yarn build
 
 # pnpm
 pnpm build
+```
+
 Переменные окружения:
 В проекте используются переменные окружения для конфиденциальных данных, таких как API-ключи.
-
+```bash
 Создайте файл .env в корне проекта и добавьте туда следующие переменные:
 
-KINOPOISK_API_KEY=your_api_key_here
-KINOPOISK_SERIES_API_KEY=your_series_api_key_here
+KINOPOISK_API_KEY=your_first_api_key_here
+KINOPOISK_SERIES_API_KEY=your_second_api_key_here
 Важно: Убедитесь, что файл .env добавлен в .gitignore, чтобы избежать случайной утечки данных в репозиторий.
+```
 
 Структура кода:
 components/AllHeader.vue — Хедер приложения с функционалом поиска.
